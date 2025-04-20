@@ -19,8 +19,10 @@
 - Refactor the code add a constant file in utils folder and create a components folder.
   -You should not go to other routes without login.
   -If the token is present is present then redirect to login page.
-  -Logout
-  -profile
+  -Logout feature
+  - Get the feed and the feed in the store.
+  -Build the user-card in the feed.
+
 
 Body
 NavBar
