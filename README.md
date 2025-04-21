@@ -21,8 +21,10 @@
   -If the token is present is present then redirect to login page.
   -Logout feature
   - Get the feed and the feed in the store.
-  -Build the user-card in the feed.
-
+  - Build the user-card in the feed.
+  - Edit profile page
+  -Added toast notification after successfully edit and saving the profile.
+  - Connection page
 
 Body
 NavBar

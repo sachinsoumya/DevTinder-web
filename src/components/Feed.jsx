@@ -8,6 +8,8 @@ import UserCard from "./UserCard";
 const Feed = () => {
   const dispatch = useDispatch();
   const feed = useSelector((store) => store.feed);
+
+  
   const getFeed = async () => {
     if (feed) return;
     try {
@@ -29,7 +31,7 @@ const Feed = () => {
   return (
     feed && (
       <div className="flex justify-around flex-wrap">
-        {feed?.map((item, key) => (
+        {feed?.map((item) => (
           <div key={item.id}>
             <UserCard user={item}  />
           </div>
