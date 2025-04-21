@@ -25,6 +25,7 @@
   - Edit profile page
   -Added toast notification after successfully edit and saving the profile.
   - Connection page
+  - Received request page
 
 Body
 NavBar
