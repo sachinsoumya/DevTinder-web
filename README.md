@@ -27,9 +27,10 @@
   - Connection page
   - Received request page
   - Feature: Accept or Reject requests.
+  -Send connection request (interested/ignored).
 
 Remaining 
- -Send connection request (interested/ignored).
+ 
  -SignUp new user to the app
  -E to E testing.
 

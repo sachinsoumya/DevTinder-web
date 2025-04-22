@@ -9,7 +9,6 @@ const Feed = () => {
   const dispatch = useDispatch();
   const feed = useSelector((store) => store.feed);
 
-  
   const getFeed = async () => {
     if (feed) return;
     try {
@@ -28,14 +27,20 @@ const Feed = () => {
     getFeed();
   }, []);
 
+  if (!feed) return <></>;
+
+  if (feed.length === 0) return <h1>No new user Found</h1>;
+
   return (
     feed && (
       <div className="flex justify-around flex-wrap">
-        {feed?.map((item) => (
+        {/* {feed?.map((item) => (
           <div key={item.id}>
-            <UserCard user={item}  />
+            <UserCard user={item[]}  />
           </div>
-        ))}
+        ))} */}
+
+        <UserCard user={feed[0]} />
       </div>
     )
   );
