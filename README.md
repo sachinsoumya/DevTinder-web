@@ -26,6 +26,13 @@
   -Added toast notification after successfully edit and saving the profile.
   - Connection page
   - Received request page
+  - Feature: Accept or Reject requests.
+
+Remaining 
+ -Send connection request (interested/ignored).
+ -SignUp new user to the app
+ -E to E testing.
+
 
 Body
 NavBar
