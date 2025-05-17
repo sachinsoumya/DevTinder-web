@@ -8,6 +8,7 @@ import { removeUser } from "../Utils/userSlice";
 import { removeFeed } from "../Utils/feedSlice";
 
 import { useNavigate } from "react-router-dom";
+import Logo from "../assets/images/logo.jpg";
 const NavBar = () => {
   const user = useSelector((store) => store.user);
 
@@ -33,14 +34,27 @@ const NavBar = () => {
   return (
     <div className="navbar bg-base-300  w-full">
       <div className="flex-2">
-        <Link to="/" className="btn btn-ghost text-xl">
-          👨‍💻DevTinder
+        <div className="avatar">
+          <div className="mask mask-squircle w-12 ">
+            <Link to="/">
+              {" "}
+              <img src={Logo} className="object-cover" />
+            </Link>
+          </div>
+        </div>
+        <Link
+          to="/"
+          className="btn btn-ghost text-xl  font-[Circular] hidden md:inline-block "
+        >
+          DevTinder
         </Link>
       </div>
       <div className="flex gap-2 mx-2">
         {user && (
           <div className="dropdown dropdown-end flex justify-between">
-            <div className="px-3">Welcome {user.firstName}</div>
+            <div className="px-3 py-2 sm:text-xs md:text-sm">
+              Welcome {user.firstName}
+            </div>
             <div
               tabIndex={0}
               role="button"

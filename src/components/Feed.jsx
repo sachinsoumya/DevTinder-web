@@ -33,7 +33,7 @@ const Feed = () => {
 
   return (
     feed && (
-      <div className="flex justify-around flex-wrap">
+      <div className="flex justify-around flex-wrap  items-center md:h-[800px] lg:h-auto">
         {/* {feed?.map((item) => (
           <div key={item.id}>
             <UserCard user={item[]}  />

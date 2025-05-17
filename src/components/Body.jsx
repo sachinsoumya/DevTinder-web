@@ -33,7 +33,7 @@ const Body = () => {
     fetchUser();
   }, []);
   return (
-    <div>
+    <div className="bg-linear-to-b   to-cyan-500 from-bg-base-300">
       <NavBar />
       <Outlet />
       <Footer />
